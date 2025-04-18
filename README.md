@@ -13,7 +13,7 @@ Ideal para quem precisa alternar entre siglas como ARNO, ARSO e quadras numéric
 
 ```bash
 git clone https://github.com/L9nnek/geo-palmas.git
-cd geopalmas
+cd geo-palmas
 ```
 
 ---
