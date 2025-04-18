@@ -22,7 +22,7 @@ cd geopalmas
 
 - **Linux/macOS**
   ```bash
-  python3 menu.py
+  python3 main.py
   ```
 
 - **Windows**
