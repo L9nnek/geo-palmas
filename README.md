@@ -12,7 +12,7 @@ Ideal para quem precisa alternar entre siglas como ARNO, ARSO e quadras numéric
 ## 📦 Instalação
 
 ```bash
-git clone https://github.com/l9nnek/geopalmas.git
+git clone https://github.com/L9nnek/geo-palmas.git
 cd geopalmas
 ```
 
