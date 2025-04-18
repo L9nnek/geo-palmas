@@ -27,7 +27,7 @@ cd geopalmas
 
 - **Windows**
   ```bash
-  py menu.py
+  py main.py
   ```
 
 ---
