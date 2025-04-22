@@ -62,7 +62,7 @@ class Conversor:
                 + "\n"
                 + r"""
 
-     [3] Voltar para o MENU
+     [1] Voltar para o MENU
 """
             )
             busca = (
@@ -73,6 +73,7 @@ class Conversor:
             if busca == "1":
                 for i in range(50):
                     print("\n")
+                return     
             cidade = Palmas()
             achou = False
             for d in cidade.quadras:
