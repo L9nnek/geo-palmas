@@ -40,4 +40,5 @@ cd geo-palmas
 
 ## 📝 Licença
 
-MIT
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
