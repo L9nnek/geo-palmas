@@ -213,3 +213,10 @@ class Palmas:
         }
 
         self.quadras = [self.arno, self.arne, self.arse, self.arso]
+
+    def get_mapa(self):
+        if not hasattr(self, "_mapa"):
+            self._mapa = {}
+            for quadra in self.quadras:
+                self._mapa.update(quadra)
+        return self._mapa

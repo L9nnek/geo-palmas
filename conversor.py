@@ -32,17 +32,12 @@ class Conversor:
                     print("\n")
                 return
             cidade = Palmas()
-            achou = False
-            for d in cidade.quadras:
-                for chave_0, valor_1 in d.items():
-                    if busca == chave_0:
-                        for i in range(50):
-                            print("\n")
-                        print(f"     🔎 Busca: {chave_0} | 📍 Resultado: {valor_1}")
-                        achou = True
-                if achou:
-                    break
-            if not achou:
+            resultado = cidade.get_mapa().get(busca)
+            if resultado:
+                for i in range(50):
+                    print("\n")
+                print(f"     🔎 Busca: {busca} | 📍 Resultado: {resultado}")
+            else:
                 for i in range(50):
                     print("\n")
                 print("             Endereço", busca, "inválido!")
@@ -75,17 +70,13 @@ class Conversor:
                     print("\n")
                 return     
             cidade = Palmas()
-            achou = False
-            for d in cidade.quadras:
-                for chave_0, valor_1 in d.items():
-                    if busca == valor_1:
-                        for i in range(50):
-                            print("\n")
-                        print(f"     🔎 Busca: {valor_1} | 📍 Resultado: {chave_0}")
-                        achou = True
-                if achou:
-                    break
-            if not achou:
+            mapa_inverso = {v: k for k, v in cidade.get_mapa().items()}
+            resultado = mapa_inverso.get(busca)
+            if resultado:
+                for i in range(50):
+                    print("\n")
+                print(f"     🔎 Busca: {busca} | 📍 Resultado: {resultado}")
+            else:
                 for i in range(50):
                     print("\n")
                 print("             Endereço", busca, "inválido!")
