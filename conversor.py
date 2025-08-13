@@ -1,5 +1,6 @@
 from palmas import Palmas
 from curiosidades import Curiosidades
+from utils.terminal import clear_screen
 
 
 class Conversor:
@@ -28,23 +29,20 @@ class Conversor:
                 .strip()
             )
             if busca == "1":
-                for i in range(50):
-                    print("\n")
+                clear_screen()
                 return
             cidade = Palmas()
             achou = False
             for d in cidade.quadras.values():
                 for chave_0, valor_1 in d.items():
                     if busca == chave_0:
-                        for i in range(50):
-                            print("\n")
+                        clear_screen()
                         print(f"     🔎 Busca: {chave_0} | 📍 Resultado: {valor_1}")
                         achou = True
                 if achou:
                     break
             if not achou:
-                for i in range(50):
-                    print("\n")
+                clear_screen()
                 print("             Endereço", busca, "inválido!")
 
     def converter_para_sigla():
@@ -71,21 +69,18 @@ class Conversor:
                 .strip()
             )
             if busca == "1":
-                for i in range(50):
-                    print("\n")
-                return     
+                clear_screen()
+                return
             cidade = Palmas()
             achou = False
             for d in cidade.quadras.values():
                 for chave_0, valor_1 in d.items():
                     if busca == valor_1:
-                        for i in range(50):
-                            print("\n")
+                        clear_screen()
                         print(f"     🔎 Busca: {valor_1} | 📍 Resultado: {chave_0}")
                         achou = True
                 if achou:
                     break
             if not achou:
-                for i in range(50):
-                    print("\n")
+                clear_screen()
                 print("             Endereço", busca, "inválido!")
