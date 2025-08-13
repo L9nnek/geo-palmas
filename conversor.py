@@ -33,7 +33,7 @@ class Conversor:
                 return
             cidade = Palmas()
             achou = False
-            for d in cidade.quadras:
+            for d in cidade.quadras.values():
                 for chave_0, valor_1 in d.items():
                     if busca == chave_0:
                         for i in range(50):
@@ -76,7 +76,7 @@ class Conversor:
                 return     
             cidade = Palmas()
             achou = False
-            for d in cidade.quadras:
+            for d in cidade.quadras.values():
                 for chave_0, valor_1 in d.items():
                     if busca == valor_1:
                         for i in range(50):
