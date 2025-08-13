@@ -32,6 +32,23 @@ cd geo-palmas
 
 ---
 
+## 📁 Dados das quadras
+
+Os mapeamentos entre siglas e endereços ficam em `data/quadras.json` no formato:
+
+```json
+{
+  "arno": { "ARNO 12": "AE 105 Norte" },
+  "arne": { "ARNE 12": "106 Norte" },
+  "arse": { "ARSE 12": "106 Sul" },
+  "arso": { "ARSO 12": "105 Sul" }
+}
+```
+
+Cada chave principal representa uma região da cidade e contém as conversões específicas.
+
+---
+
 ## ✅ Requisitos
 
 - Python 3.7 ou superior
@@ -40,4 +57,5 @@ cd geo-palmas
 
 ## 📝 Licença
 
-MIT
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
+

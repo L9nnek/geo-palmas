@@ -1,8 +1,9 @@
 from conversor import Conversor
+from utils.terminal import clear_screen
 
 
 def main():
-    print("\n" * 50)
+    clear_screen()
     while True:
         print(
             r"""
@@ -23,11 +24,11 @@ def main():
         escolha = input("     Escolha uma opção (1, 2 ou 3): ").strip()
 
         if escolha == "1":
-            print("\n" * 50)
+            clear_screen()
             Conversor.converter_para_numerado()
 
         elif escolha == "2":
-            print("\n" * 50)
+            clear_screen()
             Conversor.converter_para_sigla()
 
         elif escolha == "3":
@@ -35,7 +36,7 @@ def main():
             break
 
         else:
-            print("\n" * 50)
+            clear_screen()
             print("\n     Opção inválida! Digite 1, 2 ou 3.\n")
 
 
