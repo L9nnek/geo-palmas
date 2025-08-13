@@ -3,7 +3,7 @@ from curiosidades import Curiosidades
 
 
 class Conversor:
-
+    @staticmethod
     def converter_para_numerado():
         while True:
             print(
@@ -46,7 +46,7 @@ class Conversor:
                 for i in range(50):
                     print("\n")
                 print("             Endereço", busca, "inválido!")
-
+    @staticmethod
     def converter_para_sigla():
         while True:
             print(
@@ -89,3 +89,4 @@ class Conversor:
                 for i in range(50):
                     print("\n")
                 print("             Endereço", busca, "inválido!")
+

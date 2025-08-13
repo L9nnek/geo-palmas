@@ -2,6 +2,7 @@ import random
 
 
 class Curiosidades:
+    @staticmethod
     def frases():
         frases = [
             "Palmas foi projetada com base em quadras numeradas, facilitando a localização em toda a cidade.",
@@ -26,3 +27,4 @@ class Curiosidades:
             "A cidade possui setores específicos para atividades comerciais, administrativas e habitacionais, o que evita a mistura desordenada.",
         ]
         return random.choice(frases)
+
