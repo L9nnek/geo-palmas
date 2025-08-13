@@ -57,4 +57,5 @@ Cada chave principal representa uma região da cidade e contém as conversões e
 
 ## 📝 Licença
 
-MIT
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
