@@ -4,7 +4,7 @@ from utils.terminal import clear_screen
 
 
 class Conversor:
-
+    @staticmethod
     def converter_para_numerado():
         while True:
             print(
@@ -44,7 +44,7 @@ class Conversor:
             if not achou:
                 clear_screen()
                 print("             Endereço", busca, "inválido!")
-
+    @staticmethod
     def converter_para_sigla():
         while True:
             print(
@@ -84,3 +84,4 @@ class Conversor:
             if not achou:
                 clear_screen()
                 print("             Endereço", busca, "inválido!")
+
